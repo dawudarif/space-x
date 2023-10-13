@@ -2,7 +2,7 @@ export interface IPastLaunches {
   launchesPast: Array<PastLaunchData>;
 }
 
-interface PastLaunchData {
+export interface PastLaunchData {
   id: string;
   details: string;
   launch_date_utc: string;
