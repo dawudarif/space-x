@@ -1,17 +1,16 @@
 import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer';
-import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import PastLaunches from './pages/PastLaunches';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
-        <Route index path='/' element={<Home />} />
-        <Route index path='/past-launches' element={<PastLaunches />} />
+        <Route index path='/' element={<PastLaunches />} />
         {/* <Route path='*' element={<NotFound />} /> */}
       </Routes>
       <Footer />

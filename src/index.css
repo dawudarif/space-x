@@ -16,28 +16,8 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 30vh;
   width: 100%;
-}
-
-/* HOME */
-
-.home-wrapper {
-}
-
-.home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  width: 100%;
-}
-
-.home h1 {
-  min-height: 50vh;
-  width: 100%;
-  max-width: 1600px;
-  background: #344e41;
 }
 
 /* PAST LAUNCHES */
@@ -45,6 +25,10 @@ code {
 .past-launches-wrapper {
   color: white;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .past-launches-main {
@@ -115,4 +99,94 @@ code {
 .launch-details {
   color: black;
   font-weight: 500;
+}
+
+.search-head {
+  color: #344e41;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.search {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.search input,
+.search button,
+.search select {
+  box-sizing: border-box;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.search input,
+.search select {
+  width: 20%;
+}
+
+.search button {
+  width: 10%;
+  background-color: #344e41;
+  color: #eeeeee;
+  border: 2px solid transparent;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+.search button:hover {
+  background-color: #eeeeee;
+  border: 2px solid #344e41;
+  color: #344e41;
+}
+
+/* FOOTER */
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #212529;
+  margin-top: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6rem;
+  color: white;
+  height: 10rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1600px;
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: #344e41;
+  color: white;
+  border-bottom: 1px solid #2c4237e4;
+}
+
+nav p {
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
 }
