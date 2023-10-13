@@ -63,6 +63,7 @@ const PastLaunches = () => {
           <select
             id='type'
             name='type'
+            className='select-option'
             onChange={(e) => setFilter(e.target.value)}
             value={filter}
           >
