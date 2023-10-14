@@ -18,7 +18,6 @@ const PastLaunches = () => {
 
   const onSearch = (e: FormEvent) => {
     e.preventDefault();
-    setSearchResults(true);
 
     const searched = search.toLowerCase();
 
@@ -26,6 +25,8 @@ const PastLaunches = () => {
       const filteredData = flippedArray?.filter(
         (e) => e.launch_date_utc.substring(0, 4) === search,
       );
+
+      setSearchResults(true);
       setLaunchData(filteredData);
       setSearchOutput('year: ' + search);
     } else if (filter === 'rocket') {
@@ -33,6 +34,8 @@ const PastLaunches = () => {
         const rocketName = e.rocket.rocket_name.toLowerCase();
         return rocketName.includes(searched);
       });
+
+      setSearchResults(true);
       setSearchOutput('rocket: ' + search);
       setLaunchData(filteredData);
     } else if (filter === 'mission') {
@@ -40,6 +43,8 @@ const PastLaunches = () => {
         const missionName = e.mission_name.toLowerCase();
         return missionName.includes(searched);
       });
+
+      setSearchResults(true);
       setSearchOutput('mission: ' + search);
       setLaunchData(filteredData);
     }
